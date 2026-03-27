@@ -8,6 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
 import chatRouter from "./routes/openAIRoutes.js";
 
 app.use("/", chatRouter);

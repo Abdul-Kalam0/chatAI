@@ -1,5 +1,5 @@
 import express from "express";
-import { chatAI } from "../controller.js/openAI.js";
+import { chatAI } from "../controllers.js/chatController.js";
 
 const router = express.Router();
 
