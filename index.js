@@ -8,10 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+//import chatRouter from "./routes/openAIRoutes.js";
+import geminiRouter from "./routes/geminiRoutes.js";
 
-import chatRouter from "./routes/openAIRoutes.js";
-
-app.use("/", chatRouter);
+app.use("/", geminiRouter);
 
 app.listen(3000, () => {
   console.log("AI connected to server 3000");
