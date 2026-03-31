@@ -61,7 +61,7 @@ export const geminiChat = async (req, res) => {
 
     res.status(500).json({
       success: false,
-      error: "Failed to generate response",
+      error: "Failed to generate the response",
     });
   }
 };
