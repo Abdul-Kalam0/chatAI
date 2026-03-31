@@ -48,7 +48,7 @@ export const geminiChat = async (req, res) => {
       contents: message,
       generationConfig: {
         temperature: 0.3,
-        maxOutputTokens: 200,
+        maxOutputTokens: 100,
       },
     });
 
